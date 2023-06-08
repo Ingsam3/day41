@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>attr3</title>
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	</head>
+	<body>
+			<script type="text/javascript">
+			$(document).ready(function(){
+				$("#attr_btn").click(function(){
+					/*
+					문제) attr 사용하여 alt 속성값을 'Best 복숭아'로 변경하는 코드 추가
+					*/
+					$("#peach").attr("alt", "Best 복숭아");
+					//$("#peach").attr("src", "../images/peach.jpg");
+				});
+			});
+		
+		</script>
+		<img id="peach" src="peach.jpg" width="300" height="250" alt="복숭아">
+		<!-- 해당 이미지를 불러오지 못하면 alt 속성 값을 출력한다 -->
+		<hr>
+		<button id="attr_btn" >alt 속성값 변경</button>
+	</body>
+</html>

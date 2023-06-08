@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>attr02</title>
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(".btn").click(function(){
+					alert($("#puppy").attr("src"));
+					//attr()함수는 src 속성값 가져옴
+				
+				});
+			});
+		
+		</script>
+		<img id="puppy" src="../images/puppy.jpg" width="200" height="170" alt="강아지">
+		<hr>
+		<input type="button" class="btn" value="attr()">
+	</body>
+</html>

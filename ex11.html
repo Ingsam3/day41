@@ -10,7 +10,8 @@
 			$(document).ready(function(){
 				$(".addr_btn").click(function(){
 					alert($("#addr").val());
-					// val() : 함수에 인자값이 없다면 해당 입력 필드의 입력값을 반환한다 
+					return false; //이벤트 종료 => 데이터를 서버로 보내는 기능을 종료
+					// val() : 함수에 인자값이 없다면 해당 입력 필드의 입력값을 반환한다  
 
 				});
 			});
@@ -20,6 +21,11 @@
 			주소<input type="text" id="addr" size="24"> 
 			<!-- 입력받은 텍스트를 alert로 반환 -->
 			<button type="submit" class="addr_btn">val()</button>
+			
+			<!-- 
+				문제) alert 경고창을 띄운다음  get 방식의 자료 노출되면 쿼리스트링 문제 발생
+			 		코드 추가 문제해결
+			 -->
 		
 		</form>
 	</body>

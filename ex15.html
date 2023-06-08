@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>append</title>
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#btn01").click(function(){
+					$("p").append("<strong style= 'color:red; font-size:28px;'>문자끝에 추가</strong>");
+					//선택된 요소 끝에 내용을 추가
+				});
+				$("#btn02").click(function(){
+					$("p").prepend("<b style= 'color:blue; font-size:22px;'>문자앞에 추가</b>");
+					//선택된 요소 앞에 내용을 추가
+				});
+				
+				
+			});
+		
+		</script>
+		
+		<p>뭐라는 거야</p>
+		<button id="btn01">append</button>
+		<button id="btn02">prepend</button>
+		
+	</body>
+</html>
