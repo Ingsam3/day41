@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>텍스트 변경 적용</title>
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				
+				$("#text01").click(function(){
+					$("#result").text("반갑습니다로 문자 변경 적용");
+					//text() 함수에 인자값이 있으면 해당 요소에 문자를 변경 적용한다
+				});
+				
+				$("#html01").click(function(){
+					$("#result").html("<b style='color:red'>문자를 진하게 변경 적용</b>");
+					//html 함수에 문자와 태그 인자값이 있다면 해당 요소에 문자와 태그를 함께 변경 적용한다.
+				});
+				
+			});
+		
+		</script>
+		<p id="result"> 여기에 변경 적용</p>
+		<button id="text01">text01</button>
+		<button id="html01">html01</button>
+	</body>
+</html>

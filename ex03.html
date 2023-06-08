@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>toggle()함수</title>
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	</head>
+	<body>
+		<input type="button" id="panda" value="Show panda">
+		<hr>
+		<img id="panda_img" src ="../images/panda.jpg" width="250" height="230"
+			style="display: none;">
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#panda").click(function(){
+					$("#panda_img").toggle(); 
+					// toggle : 해당영역이 숨겨져있으면 보이고 보이고 있으면 숨겨짐
+					
+				});
+				
+			});
+		
+		</script>	
+	</body>
+</html>

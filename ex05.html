@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>animate02 투명도, 크기조절</title>
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	</head>
+	<body>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#btn01").click(function(){
+				$("#st01").animate({
+					left :"600",
+					opacity : "0.5", //투명도
+					width :"250px" //너비 변경
+				});
+				
+			});
+			
+			
+		});
+	</script>	
+		<img id ="st01" src ="../images/panda.jpg" width="120" height="150"
+			style="position: relative;">
+			<hr>
+		<input type="button" value="animate()" id="btn01">	
+	
+	</body>
+</html>

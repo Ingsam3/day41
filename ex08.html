@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>method chaining</title>
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	</head>
+	<body>
+	<script type="text/javascript">
+		//method chaining : 연속적인 코드줄에서 개체의 method를 반복적으로 호출하는 것
+	
+			$(document).ready(function(){
+				$("#pbtn").click(function(){
+					$("#peach01").show().fadeOut("slow").slideDown("slow"); 
+					//여러 함수 한 줄로 나열 가능  
+				}); 
+			}); 
+				
+		</script>
+		
+		<input type="button" id="pbtn" value="method chaining">
+		<hr>
+		<img id="peach01" src="../images/peach.jpg" width="250" height="230"
+		style="display: none;">
+		
+	</body>
+</html>

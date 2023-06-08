@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>animate() 함수</title>
+		
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("button").click(function(){
+					$("#puppy").animate({
+						left:"500px" // 왼->오 500px이동
+						
+					});
+					
+				});
+				
+			});
+		
+		</script>
+		
+		<img id="puppy" src="../images/puppy.jpg" width="300" height="250" alt="강아지"
+			style="position: relative;" >
+			<hr>
+		<button type="button">animate() 함수</button>	
+		<!-- button tag 의 속성은 submit이다. 즉 type 속성을 생략하면 submit이다.
+			type속성에 3가지 값 지정가능 - submit, reset, button	
+		 -->
+	</body>
+</html>

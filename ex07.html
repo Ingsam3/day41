@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>slide-up-down</title>
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#slideDown").click(function(){
+					$("#puppy01").slideDown("slow"); // sildeDown : 요소를 밑으로 내림
+				});
+				
+				$("#slideUp").click(function(){
+					$("#puppy01").slideUp("slow"); // sildeUp : 요소를 위로 올림
+				});
+				
+			});
+		
+		</script>
+		
+		<img id="puppy01" src="../images/puppy.jpg" width="200" height="180"
+			style="display: none; position: relative;">
+			
+		<hr>
+		<button id="slideDown">slideDown</button>
+		<button id="slideUp">slideUp</button>
+		
+		
+		
+	</body>
+</html>

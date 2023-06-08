@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>입력값 반환</title>
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(".addr_btn").click(function(){
+					alert($("#addr").val());
+					// val() : 함수에 인자값이 없다면 해당 입력 필드의 입력값을 반환한다 
+
+				});
+			});
+		
+		</script>
+		<form><!-- method 속성 생략하면 get방식으로 전송 -->
+			주소<input type="text" id="addr" size="24"> 
+			<!-- 입력받은 텍스트를 alert로 반환 -->
+			<button type="submit" class="addr_btn">val()</button>
+		
+		</form>
+	</body>
+</html>
