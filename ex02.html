@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>show()함수 + click이벤트</title>
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	</head>
+	<body>
+		<button id="btn1">show image</button>
+		<hr>
+		<img id="img01" src = "../images/puppy.jpg" width="300" height="300"
+			style="display: none"><!-- display: none -> 해당 이미지 숨김, 자리차지 X -->
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#btn1").click(function(){ //btn1 버튼 클릭 이벤트가 발생하면 실행
+					$("#img01").show("slow"); //show()함수로 해당 이미지를 천천히 보이게 한다.
+					
+				});
+				
+				
+			});
+		
+		
+		</script>
+	</body>
+</html>
